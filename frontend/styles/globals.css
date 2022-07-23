@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 73 161 139;
+    --color-secondary: 120 120 120;
+    --color-primary-gradient: linear-gradient(93deg, rgba(73, 161, 139, 0) 0%, rgba(73, 161, 139, 1) 66%);
+  }
+
+  body{
+    @apply bg-primary/10 font-poppins;
+  }
+}

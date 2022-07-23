@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/loading"
+        android:visibility="gone"
+        android:layout_marginTop="30dp">
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_reguler" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:visibility="visible"
+        android:id="@+id/content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi, Andi"
+            android:textAppearance="@style/TextAppearance.App.Headline2"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/black_500"/>
+        <com.example.smaticmobile.view.CardStatView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:caption="Total Billing"
+            android:layout_marginBottom="12dp"
+            app:headline="Rp20.000" />
+        <com.example.smaticmobile.view.CardStatView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:caption="Items Stored"
+            app:headline="4" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Histories"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/black_500"
+            android:layout_marginBottom="16dp" />
+        <com.example.smaticmobile.view.InvoiceItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            app:date="30 June 2022"
+            app:bill="10000"
+            app:paid="false"
+            app:elapsed="2 Days passed" />
+        <com.example.smaticmobile.view.InvoiceItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            app:date="30 June 2022"
+            app:bill="10000"
+            app:paid="false"
+            app:elapsed="2 Days passed" />
+        <com.example.smaticmobile.view.InvoiceItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            app:date="29 June 2022"
+            app:bill="10000"
+            app:paid="true"
+            app:elapsed="1 Day passed" />
+    </LinearLayout>
+</RelativeLayout>

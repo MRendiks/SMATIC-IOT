@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="active" format="boolean" />
+
+    <declare-styleable name="ButtonView">
+        <attr name="buttonViewStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="EditTextGroup">
+        <attr name="editTextGroupStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="EditTextView">
+        <attr name="editTextViewStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="StepTrackView">
+        <attr name="active" />
+    </declare-styleable>
+    <declare-styleable name="StepThumbView">
+        <attr name="step" format="integer" />
+        <attr name="active" />
+    </declare-styleable>
+    <declare-styleable name="CardStatView">
+        <attr name="headline" format="string"/>
+        <attr name="caption" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="InvoiceItemView">
+        <attr name="date" format="string"/>
+        <attr name="elapsed" format="string"/>
+        <attr name="bill" format="string"/>
+        <attr name="paid" format="boolean" />
+    </declare-styleable>
+</resources>
